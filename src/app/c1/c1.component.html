@@ -1,0 +1,14 @@
+<div class="box grey">
+  <h2>component 1</h2>
+  <div class="box">
+    <div>
+      This component has the root-provided `shared` service injected in its
+      constructor.
+    </div>
+    <br />
+    <div>SHARED service value: {{ shared.getCount() }}</div>
+    <button type="button" (click)="shared.increment()">
+      increment SHARED service
+    </button>
+  </div>
+</div>

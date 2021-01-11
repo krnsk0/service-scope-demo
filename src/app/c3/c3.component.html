@@ -1,0 +1,26 @@
+<div class="box">
+  <h2>component 3</h2>
+  <div class="box">
+    <div>
+      This component has a component-scoped service injected in its constructor;
+      note that is a distinct instance of this service from that used in
+      Component 2.
+    </div>
+    <br />
+    <div>SCOPED service value: {{ scoped.getCount() }}</div>
+    <button type="button" (click)="scoped.increment()">
+      increment SCOPED service
+    </button>
+  </div>
+  <div class="box">
+    <div>
+      It can also access the shared service-- except here it accesses it via the
+      shared service' injection into the scoped service.
+    </div>
+    <br />
+    <div>SHARED service value: {{ scoped.shared.getCount() }}</div>
+    <button type="button" (click)="scoped.shared.increment()">
+      increment SHARED service
+    </button>
+  </div>
+</div>
