@@ -14,8 +14,10 @@
   </div>
   <div class="box">
     <div>
-      It can also access the shared service-- except here it accesses it via the
-      shared service' injection into the scoped service.
+      It can also access the shared service-- except here it accesses it
+      <em>via</em> the shared service' injection into the scoped service, as
+      opposed to the shared service being injected directly into the component's
+      class.
     </div>
     <br />
     <div>SHARED service value: {{ scoped.shared.getCount() }}</div>
